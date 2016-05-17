@@ -1,6 +1,8 @@
 #' A reference class for posting wats to wattle
 #'
 #' @field exception The simpleError object for the raised exception
+#'
+#' @export
 WatCatcher = setRefClass(
   'WatCatcher',
   fields = c('exception'),
