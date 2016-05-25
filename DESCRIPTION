@@ -3,6 +3,7 @@ Type: Package
 Title: An R client for the wattle exception reporting platform
 Version: 0.1.0
 Authors@R: person("Dan", "Carpenter", "daniel.carpenter01@gmail.com", role=c('aut','cre'))
+Maintainer: Dan Carpenter <daniel.carpenter01@gmail.com>
 Description:
   The package provides helper methods and classes for reporting errors
   to the wattle exception reporting service. Further details about wattle
