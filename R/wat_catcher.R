@@ -2,7 +2,8 @@
 #'
 #' @field exception The simpleError object for the raised exception
 #'
-#' @export
+#' @export WatCatcher
+#' @exportClass WatCatcher
 WatCatcher = setRefClass(
   'WatCatcher',
   fields = c('exception'),
