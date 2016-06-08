@@ -36,7 +36,6 @@ WatCatcher = setRefClass(
       }
     },
     wat_payload = function() {
-      "Build the post payload to be sent to wattle"
       return(
         list(
           wat = list(
@@ -44,7 +43,7 @@ WatCatcher = setRefClass(
             error_class = class(exception)[1],
             app_env = wattle$app_env,
             app_name = wattle$app_name,
-            backtrace = paste(sys.calls(), collapse="\n"),
+            backtrace = as.character(as.list(sys.calls())),
             language = 'R',
             hostname = Sys.info()['nodename'],
             captured_at = Sys.time()
